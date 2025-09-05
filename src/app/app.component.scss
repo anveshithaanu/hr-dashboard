@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flex-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+main {
+  transition: margin-left 0.3s ease-in-out;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.content-expanded {
+  margin-left: 280px;
+}
+
+.content-collapsed {
+  margin-left: 0px;
+}
+
+@media (max-width: 991.98px) {
+  .content-expanded,
+  .content-collapsed {
+    margin-left: 0 !important;
+  }
+}

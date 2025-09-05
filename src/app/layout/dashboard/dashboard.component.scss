@@ -1,0 +1,45 @@
+.card {
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 12px;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+  .card-body {
+    position: relative;
+    z-index: 2;
+  }
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: transparent;
+  z-index: 1;
+}
+.card-border-primary::before {
+  background-color: var(--bs-primary);
+}
+.card-border-success::before {
+  background-color: var(--bs-success);
+}
+.card-border-warning::before {
+  background-color: var(--bs-warning);
+}
+.card-border-info::before {
+  background-color: var(--bs-info);
+}
+
+.color-filled-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
