@@ -1,0 +1,34 @@
+<aside class="bg-dark text-white p-3" [ngClass]="{'collapsed': (isCollapsed$ | async)}">
+  <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+      <a class="nav-link text-white active" routerLink="/dashboard" routerLinkActive="active" aria-current="page">
+        <i class="bi bi-speedometer2 me-2"></i>
+        <span [class.d-none]="(isCollapsed$ | async)">Dashboard</span>
+      </a>
+    </li>
+ <li class="nav-item">
+      <a class="nav-link text-white">
+        <i class="bi bi-graph-up me-2"></i>
+        <span [class.d-none]="(isCollapsed$ | async)">Reports</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white">
+        <i class="bi bi-people me-2"></i>
+        <span [class.d-none]="(isCollapsed$ | async)">Employees</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white">
+        <i class="bi bi-briefcase me-2"></i>
+        <span [class.d-none]="(isCollapsed$ | async)">Recruiting</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white">
+        <i class="bi bi-gear me-2"></i>
+        <span [class.d-none]="(isCollapsed$ | async)">Settings</span>
+      </a>
+    </li>
+  </ul>
+</aside>

@@ -1,0 +1,51 @@
+.navbar {
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  .toggle-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .search-box {
+    flex: 1;
+    margin: 0 1rem;
+
+    input {
+      width: 100%;
+      max-width: 300px;
+      padding: 6px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .user-menu {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+  .togglebtn {
+    margin-left: -12px;
+  }
+  .dropdown-item {
+    cursor: pointer;
+  }
+}
